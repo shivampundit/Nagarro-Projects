@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bar Project</title>
+
+    <style>
+      body {
+        font-family: Poppins, calibri;
+      }
+      h1,
+      p {
+        margin: 0;
+        text-align: center;
+      }
+
+      #search {
+        padding: 8px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-align: center;
+        width: 300px;
+        color: blue;
+        font-size: 30px;
+      }
+      #search:focus {
+        outline: none;
+      }
+      .blocks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 290px));
+        grid-gap: 100px;
+        margin-top: 20px;
+      }
+      .block {
+        border: 1px solid rgba(0, 0, 0, 0);
+        width: 300px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        filter: drop-shadow(rgba(0, 0, 0, 0.08) 5px 5px 10px);
+        animation: fade 1000ms ease;
+      }
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .block:hover {
+        border: 5px solid blue;
+      }
+
+      .nothing {
+        font-size: 50px;
+        color: rgb(180, 180, 180);
+        font-weight: 800;
+        margin-left: 50px;
+        display: none;
+        animation: fadein 300ms ease-out;
+      }
+      @keyframes fadein {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        50% {
+          opacity: 0.5;
+          transform: translateX(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <input type="search" placeholder="Search here" id="search" />
+    </h1>
+
+    <div class="blocks">
+      <div class="block">
+        <h1 class="head">Mahatma Gandhi</h1>
+        <p class="para">
+          Mohandas Karamchand Gandhi (/ˈɡɑːndi, ˈɡændi/;[3] GAHN-dee; 2 October
+          1869 – 30 January 1948), commonly known as Bapu, was an Indian
+          lawyer,[4] anti-colonial nationalist[5] and political ethicist[6] who
+          employed nonviolent resistance to lead the successful campaign for
+          India's independence from British rule,[7] and to later inspire
+          movements for civil rights and freedom across the world. The honorific
+          prefix Mahātmā (Sanskrit: "great-souled", "venerable"), first applied
+          to him in 1914 in South Africa, is now used throughout the
+          world.[8][9] Born and raised in a Hindu family in coastal Gujarat,
+          Gandhi trained in the law at the Inner Temple, London, and was called
+          to the bar at age 22 in June 1891. After two uncertain years in India,
+          where he was unable to start a successful law practice, he moved to
+          South Africa in 1893 to represent an Indian merchant in a lawsuit. He
+          went on to live in South Africa for 21 years. It was here that Gandhi
+          raised a family and first employed nonviolent resistance in a campaign
+          for civil rights. In 1915, aged 45, he returned to India and soon set
+          about organising peasants, farmers, and urban labourers to protest
+          against excessive land-tax and discrimination
+        </p>
+      </div>
+
+      <div class="block">
+        <h1 class="head">Subhas Chandra Bose</h1>
+        <p class="para">
+          Subhas Chandra Bose, byname Netaji (Hindi: “Respected Leader”), (born
+          c. January 23, 1897, Cuttack, Orissa [now Odisha], India—died August
+          18, 1945, Taipei, Taiwan?), Indian revolutionary prominent in the
+          independence movement against British rule of India. He also led an
+          Indian national force from abroad against the Western powers during
+          World War II. He was a contemporary of Mohandas K. Gandhi, at times an
+          ally and at other times an adversary. Bose was known in particular for
+          his militant approach to independence and for his push for socialist
+          policies.
+        </p>
+      </div>
+
+      <div class="block">
+        <h1 class="head">Rajendra Prasad</h1>
+        <p class="para">
+          Rajendra Prasad, (born December 3, 1884, Zeradei, India—died February
+          28, 1963, Patna), Indian politician, lawyer, and journalist who was
+          the first president of the Republic of India (1950–62). He also was a
+          comrade of Mahatma Gandhi early in the noncooperation movement for
+          independence and was president of the Indian National Congress (1934,
+          1939, and 1947). Raised in a landowning family of modest means, Prasad
+          was a graduate of the Calcutta Law College. He practiced at the
+          Calcutta High Court and in 1916 transferred to the Patna High Court
+          and founded the Bihar Law Weekly. In 1917 he was recruited by Gandhi
+          to help in a campaign to improve conditions for peasants exploited by
+          British indigo planters in Bihar. He gave up his law practice in 1920
+          to join the noncooperation movement. Becoming an active journalist in
+          the nationalist interest, he wrote for Searchlight in English, founded
+          and edited the Hindi weekly Desh (“Country”), and started his lifelong
+          campaign to establish Hindi as the national language. Imprisoned
+          several times by the British for noncooperation activities, he served
+          nearly three years (August 1942–June 1945) in jail with the Congress
+          Party’s Working Committee.
+        </p>
+      </div>
+
+      <div class="block">
+        <h1 class="head">Lal Bahadur Shastri</h1>
+        <p class="para">
+          Lal Bahadur Shastri, (born October 2, 1904, Mughalsarai, India—died
+          January 11, 1966, Tashkent, Uzbekistan, U.S.S.R.), Indian statesman,
+          prime minister of India (1964–66) after Jawaharlal Nehru. A member of
+          Mahatma Gandhi’s noncooperation movement against British government in
+          India, he was imprisoned for a short time (1921). Upon release he
+          studied in the Kashi Vidyapitha, a nationalist university, where he
+          graduated with the title of shastri (“learned in the scriptures”). He
+          then returned to politics as a follower of Gandhi, was imprisoned
+          several more times, and attained influential positions in the Congress
+          Party of the state of the United Provinces, now Uttar Pradesh state.
+        </p>
+      </div>
+
+      <div class="block">
+        <h1 class="head">Vallabhbhai Patel</h1>
+        <p class="para">
+          Vallabhbhai Patel, in full Vallabhbhai Jhaverbhai Patel, byname Sardar
+          Patel (Hindi: “Leader Patel”), (born October 31, 1875, Nadiad,
+          Gujarat, India—died December 15, 1950, Bombay [now Mumbai]), Indian
+          barrister and statesman, one of the leaders of the Indian National
+          Congress during the struggle for Indian independence. During the first
+          three years of Indian independence after 1947, he served as deputy
+          prime minister, minister of home affairs, minister of information, and
+          minister of states.
+        </p>
+      </div>
+
+      <div class="block">
+        <h1 class="head">Chandra Shekhar Azad</h1>
+        <p class="para">
+          Chandrashekhar Sitaram Tiwari (pronunciation (help·info)[2] (23 July
+          1906 – 27 February 1931), popularly known as Chandra Shekhar Azad, was
+          an Indian revolutionary who reorganised the Hindustan Republican
+          Association (HRA) under its new name of Hindustan Socialist Republican
+          Association (HSRA) after the death of its founder, Ram Prasad Bismil,
+          and three other prominent party leaders, Roshan Singh, Rajendra Nath
+          Lahiri and Ashfaqulla Khan. He hailed from Badarka, (BAISWARA) Unnao
+          in Uttar Pradesh and his parents were Sitaram Tiwari and Jagrani Devi.
+          He often used the pseudonym "Balraj" when signing pamphlets issued as
+          the commander in chief of the HSRA.[3]
+        </p>
+      </div>
+
+      <div class="block">
+        <h1 class="head">Rani Lakshmi Bai</h1>
+        <p class="para">
+          Lakshmi Bai, also spelled Laxmi Bai, (born c. November 19, 1835,
+          Kashi, India—died June 17, 1858, Kotah-ki-Serai, near Gwalior), rani
+          (queen) of Jhansi and a leader of the Indian Mutiny of 1857–58.
+          Brought up in the household of the peshwa (ruler) Baji Rao II, Lakshmi
+          Bai had an unusual upbringing for a Brahman girl. Growing up with the
+          boys in the peshwa’s court, she was trained in martial arts and became
+          proficient in sword fighting and riding. She married the maharaja of
+          Jhansi, Gangadhar Rao, but was widowed without bearing a surviving
+          heir to the throne. Following established Hindu tradition, just before
+          his death the maharaja adopted a boy as his heir. Lord Dalhousie, the
+          British governor-general of India, refused to recognize the adopted
+          heir and annexed Jhansi in accordance with the doctrine of lapse. An
+          agent of the East India Company was posted in the small kingdom to
+          look after administrative matters.
+        </p>
+      </div>
+    </div>
+
+    <p class="nothing">No Results Foundﾉ</p>
+
+    <script>
+      let ser = document.getElementById("search");
+      let heads = document.getElementsByClassName("head");
+      let blocks = document.getElementsByClassName("block");
+      let non = document.getElementsByClassName("nothing")[0];
+
+      ser.onkeyup = () => {
+        for (let b of blocks) {
+          b.style.display = "none";
+        }
+
+        let search = ser.value.toLowerCase();
+        let view = [];
+        let i = 0;
+
+        for (let h of heads) {
+          h = h.innerHTML.toLowerCase();
+          if (h.includes(search)) {
+            view.push(blocks[i]);
+          }
+          i++;
+        }
+
+        if (view.length == 0) {
+          non.style.display = "block";
+        } else {
+          non.style.display = "none";
+          for (let v of view) {
+            v.style.display = "block";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

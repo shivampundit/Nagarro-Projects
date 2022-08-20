@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Copy to Clipboard Assignment</title>
+
+    <style>
+      body {
+        background: lightgreen;
+      }
+      *::selection {
+        background: rgb(110, 243, 73);
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(11, 11, 243);
+        text-decoration: wavy;
+      }
+      .original {
+        text-align: center;
+        margin: 20px;
+      }
+      .copy {
+        text-align: center;
+        margin: 20px;
+      }
+      .paste {
+        text-align: center;
+        margin: 10px;
+      }
+
+      textarea {
+        padding: 20px;
+        font-size: 15px;
+        color: blue;
+        background: #fad7b2;
+      }
+      #button {
+        height: 50px;
+        width: 80px;
+        border-radius: 5px;
+        background-color: #f53a2df8;
+        color: whitesmoke;
+        font-weight: 600;
+        cursor: copy;
+        border: none;
+      }
+      #button:hover {
+        background-color: #ff2222;
+        color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Copy to Clipboard</h1>
+    <div class="original">
+      <textarea name="" id="t1" cols="50" rows="12">
+us laborum nulla! Blanditiis ullam, aliquid molestiae dolor culpa quia tenetur. In, id fuga quidem eius aliquam ad laudantium fugit labore nisi quasi quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam praesentium repellend</textarea
+      >
+    </div>
+    <div class="copy">
+      <button id="button" onclick="coptToClipboard()">Copy Text</button>
+    </div>
+    <div class="paste">
+      <textarea name="" id="t2" cols="50" rows="12"></textarea>
+    </div>
+    <script>
+      function coptToClipboard() {
+        var t1 = document.getElementById("t1");
+        t1.select();
+        t1.setSelectionRange(0, 1000);
+        console.log(t2);
+        navigator.clipboard.writeText(t1.value);
+        alert("text copied successfully");
+      }
+    </script>
+  </body>
+</html>

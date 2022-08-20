@@ -1,0 +1,75 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  letter-spacing: 5px;
+}
+
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+h2 {
+  font-family: 'Oswald', sans-serif !important;
+  color: blue;
+}
+
+.jumbotron {
+  margin: 50px 0;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+}
+
+.information {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.timeline {
+  border-left: 1px solid gray;
+  margin-left: 27px;
+}
+
+.timeline > li {
+  padding: 20px 10px;
+  margin-left: -27.5px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.timeline li:before {
+  content:" ";
+  background: gray;
+  height: 12.5px;
+  width: 12.5px;
+  z-index: 10;
+  position: absolute;
+  border-radius: 50%;
+  margin-top:3px;
+  margin-left: -29.5px;
+}
+
+a
+{
+  text-decoration: none;
+  color: rgb(207, 22, 22);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 23px;
+}
+a:hover
+{
+  color: rgb(44, 176, 35);
+  font-weight: 600;
+}
+a:visited 
+{
+  color: rgb(35, 51, 176);
+  font-weight: 700;
+}

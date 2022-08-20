@@ -1,0 +1,31 @@
+<!--  
+    stripe secret key  
+
+    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 
+
+    published key
+
+    pk_live_51LSaheSB8Fu36igIqtTmqKfjHGjRNmPfU8Em8lewmKxt9UZ8sC9qnzEPjtt8ItGop0uPLyUJiRkmIGj4KrGiYAWs00upo7XPo3
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <title>Stripe Payment Demo</title>
+  <body>
+    <h3>Welcome to Payment Gateway</h3>
+    <form action="payment" method="POST">
+      <script
+        src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="<%= key %>"
+        data-amount="2500"
+        data-currency="inr"
+        data-name="Crafty Gourav"
+        data-description="E book"
+        data-locale="auto"
+      ></script>
+    </form>
+  </body>
+</html>

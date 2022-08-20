@@ -1,0 +1,153 @@
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	/* Better text styling */
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+}
+
+body {
+	background: #565656;
+}
+
+/* #about h1 {
+	color: #FFF0F5;
+	font-size: 25px;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+#about a{
+    text-decoration: none;
+	color: #FFF0F5;
+	font-size: .8rem;
+	padding-bottom: 10px;
+} */
+
+#wrapper {
+	width: 50%;
+	margin: auto;
+}
+
+/* #about {
+	width: 300px;
+	margin: 100px 30px;
+	padding-top: 50px;
+	display: block;
+	float: left;
+} */
+
+#calculator {
+	width: 305px;
+	height: auto;
+	margin: 100px 30px;
+	padding: 35px 20px 45px;
+	
+	background: #fdc698;
+	border-radius: 15px;
+    align-items: center;
+	display: block;
+	float: left;
+}
+
+/* Numbers Field */
+.top span.clear {
+	float: left;
+}
+
+/* Buttons */
+.top .screen {
+	height: 66px;
+	width: 180px;
+	overflow: hidden;
+	float: right;
+	padding: 0 10px;
+		
+	/* Typography */
+	font-size: 30px;
+    font-weight: 600;
+	line-height: 58px;
+	color: #f90e5d;
+	text-align: right;
+	letter-spacing: 2px;
+}
+
+/* Clear floats */
+.keys, .top {overflow: hidden;}
+.keys span{
+    font-weight: 400;
+    color: #000000;
+}
+/* Applying same to the keys */
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	
+	width: 61px;
+	height: 61px;
+	
+	border-radius: 50%;
+
+
+
+	margin: 0 7px 11px 0;
+	padding-top: 11px;
+	color: #c1c1c1;
+	line-height: 36px;
+	text-align: center;
+	user-select: none;
+	transition: all 0.3s ease;
+}
+
+.keys span{
+    color: rgb(17, 17, 82);
+    background-color: #ffc086;
+}
+.keys span.operator {
+	background: #FFF0F5;
+	margin-right: 0;
+    color: #f23;
+}
+
+.keys span.eval {
+	background: #e8ff51;
+	color: #888e5f;
+}
+
+.top span.clear {
+	background: #fb7381;
+	color: white;
+}
+.keys span:hover,
+.keys span.operator:hover, 
+.keys span.eval:hover, 
+.top span.clear:hover {
+    box-shadow: none;
+	color: white;
+	background: #234567;
+}
+
+
+
+.keys span,
+.keys span.operator, 
+.keys span.eval, 
+.top span.clear {
+	box-shadow: inset 0px 3px 3px rgba(255,255,255,0.1), 
+				0px 3px 3px rgba(0,0,0,0.1), 
+				inset 0px -3px 3px rgba(0,0,0,0.1);
+}
+
+#calculator {
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2),
+				inset 0px 3px 3px rgba(255,255,255,0.1), 
+				0px 3px 3px rgba(0,0,0,0.1), 
+				inset 0px -3px 3px rgba(0,0,0,0.1);
+}
+
