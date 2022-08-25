@@ -14,7 +14,7 @@ list of nagarro projects developed during nagarro summer internship by shivam ti
 
 The application is deployed to Heroku and can be accessed through the following link:
 
-[Nagarro Projects](https://shivamtiwari.live/Nagarro-Projects/)
+[Nagarro Projects](https://shivamtiwari.live/Nagarro-project/)
 
 ## License
 
