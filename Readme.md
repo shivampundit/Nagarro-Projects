@@ -8,7 +8,7 @@
 
 ## Introduction
 
-list of nagarro projects developed during nagarro summer internship by shivam tiwari
+list of nagarro projects developed during nagarro trainig for summer internship by shivam tiwari
 
 ## live
 
